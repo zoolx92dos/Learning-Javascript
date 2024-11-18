@@ -1,0 +1,40 @@
+<html>
+
+<head>
+</head>
+
+<body>
+   <script type="text/javascript">
+        var traditional_array = [1, 2, 3, 4]
+        document.write('traditional_array = ', traditional_array)
+        document.write("<br />")
+
+        var people = new Array("Prasad", "Tommy", "Pranit", "Dhananjay")
+        document.write(people, "<br />")             // Prasad,Tommy,Pranit,Dhananjay
+        document.write(people[0], "<br />")          // Prasad
+
+        // creating array manually in another way
+        var things = new Array(3)          // size of the array is 3 here; if blank then we can add elements dynamically
+        things[0] = 'German'
+        things[1] = 'Aptitude'
+        things[2] = 'FZ'
+        document.write(things, "<br />")
+
+        // Let's have a look on array properties
+        document.write('Length of people array =', people.length, '<br />')   // 4
+
+        var new_array = people.concat(things)                // concatenates two arrays
+        document.write('new_array =', new_array, '<br />')   // Prasad,Tommy,Pranit,Dhananjay,German,Aptitude,FZ
+        document.write('<br />')
+
+        // Nice way of printing the array elements
+        document.write('people array elements are as follows: <br />')
+
+        for (j=0; j<people.length; j++)
+        {
+            document.write(people[j], '<br />')
+        }
+   </script>
+</body>
+
+</html>
